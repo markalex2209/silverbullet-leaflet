@@ -6,6 +6,6 @@ functions:
   leafletWidget:
     path: ./leaflet.ts:widget
     codeWidget: leaflet
-  leafletFunction:
+  render:
     path: ./leaflet.ts:widget
     syscall: "leaflet.render"
