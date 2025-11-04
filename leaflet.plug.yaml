@@ -8,4 +8,5 @@ functions:
     codeWidget: leaflet
   render:
     path: ./leaflet.ts:widget
-    syscall: "leaflet.render"
+    command: leafletRender
+    # syscall: "leaflet.render"
