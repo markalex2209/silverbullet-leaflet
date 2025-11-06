@@ -17,7 +17,7 @@ export async function widget(bodyText: string): Promise<WidgetContent> {
   });
 }
 
-export async function widget2(body: object): Promise<WidgetContent> {
+export async function dynamicContent(body: object): Promise<WidgetContent> {
   console.log(body);
   const mapJs = await asset.readAsset("leaflet", "assets/map.js");
   const mapCss = await asset.readAsset("leaflet", "assets/map.css");
