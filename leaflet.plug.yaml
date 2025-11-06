@@ -7,5 +7,5 @@ functions:
     path: ./leaflet.ts:widget
     codeWidget: leaflet
   render:
-    path: ./leaflet.ts:widget
+    path: ./leaflet.ts:widget2
     syscall: leaflet.render

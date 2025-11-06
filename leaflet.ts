@@ -16,3 +16,19 @@ export async function widget(bodyText: string): Promise<WidgetContent> {
     script: mapJs,
   });
 }
+
+export async function widget2(body: object): Promise<WidgetContent> {
+  console.log(body);
+  const mapJs = await asset.readAsset("leaflet", "assets/map.js");
+  const mapCss = await asset.readAsset("leaflet", "assets/map.css");
+  return Promise.resolve({
+    html: `
+      <style>${mapCss}</style>
+      <script type="application/json" id="map-content">
+        ${JSON.stringify(body)}
+      </script>
+      <div id="app"></div>
+    `,
+    script: mapJs,
+  });
+}
